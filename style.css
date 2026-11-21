@@ -1,0 +1,1175 @@
+
+/* =========================================
+   MIGUEL PEDRO STUDIOS
+   IDENTIDADE VISUAL OFICIAL
+   PRETO | DOURADO | BRANCO
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #f5f2eb;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   1. CABEÇALHO
+========================================= */
+
+header {
+    width: 100%;
+    min-height: 95px;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #080808;
+    border-bottom: 1px solid #252525;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+.brand-mark {
+    width: 72px;
+    height: 72px;
+    border: 1.5px solid #c6a15b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    letter-spacing: -3px;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.brand-mark span {
+    color: #c6a15b;
+}
+
+.brand-name {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.brand-name small {
+    display: block;
+    color: #c6a15b;
+    font-size: 10px;
+    letter-spacing: 5px;
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+    gap: 27px;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c6a15b;
+}
+
+/* =========================================
+   2. PÁGINA INICIAL
+========================================= */
+
+#inicio {
+    min-height: 650px;
+    padding: 150px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.95),
+            rgba(0,0,0,0.55)
+        ),
+        radial-gradient(
+            circle at 80% 50%,
+            #49351c,
+            #080808 65%
+        );
+}
+
+#inicio h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(42px, 6vw, 75px);
+    max-width: 850px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+#inicio p {
+    color: #aaa;
+    max-width: 550px;
+    line-height: 1.9;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+#inicio a {
+    display: inline-block;
+    background: #c6a15b;
+    color: #080808;
+    text-decoration: none;
+    padding: 16px 28px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#inicio a:hover {
+    background: #e0bd7a;
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   3. SECÇÃO SOBRE
+========================================= */
+
+.about {
+    width: 100%;
+    padding: 120px 10%;
+    background: #0b0b0b;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.section-label {
+    color: #c6a15b;
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.about-content h2 {
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: clamp(35px, 4vw, 52px);
+    line-height: 1.2;
+    margin: 25px 0;
+}
+
+.about-content h2 span {
+    color: #c6a15b;
+    display: block;
+}
+
+.about-content p {
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.about-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 17px 25px;
+    background: #c6a15b;
+    color: #080808;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.about-button:hover {
+    background: #e4c17d;
+    transform: translateY(-3px);
+}
+
+/* DECORAÇÃO MP */
+
+.about-decoration {
+    min-height: 350px;
+    border: 1px solid #66502d;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle,
+            #292016 0%,
+            #111 55%,
+            #080808 100%
+        );
+}
+
+.about-logo {
+    font-family: Georgia, serif;
+    font-size: 110px;
+    color: #fff;
+    letter-spacing: -10px;
+}
+
+.about-logo span {
+    color: #c6a15b;
+}
+
+.about-decoration p {
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-top: 15px;
+}
+
+.about-decoration small {
+    color: #c6a15b;
+    font-size: 9px;
+    letter-spacing: 3px;
+    margin-top: 12px;
+}
+
+/* =========================================
+   4. SECÇÃO SERVIÇOS
+========================================= */
+
+.services {
+    width: 100%;
+    padding: 110px 8%;
+    background: #080808;
+}
+
+.services-heading {
+    max-width: 750px;
+    margin-bottom: 60px;
+}
+
+.services-heading h2 {
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: clamp(35px, 4vw, 52px);
+    line-height: 1.2;
+    margin: 25px 0;
+}
+
+.services-heading h2 span {
+    display: block;
+    color: #c6a15b;
+}
+
+.services-heading p {
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 600px;
+}
+
+/* GRELHA */
+
+.services .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+/* CARTÕES */
+
+.services .service-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    min-width: 0;
+    min-height: 320px;
+    padding: 35px 28px;
+
+    background: #121212;
+    border: 1px solid #383024;
+
+    transition: all 0.35s ease;
+}
+
+.services .service-card:hover {
+    background: #1b1711;
+    border-color: #c6a15b;
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(198,161,91,0.08);
+}
+
+.services .service-card.featured {
+    border-color: #c6a15b;
+
+    background: linear-gradient(
+        145deg,
+        #211a10,
+        #111111
+    );
+}
+
+/* NÚMEROS */
+
+.service-number {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #c6a15b;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+/* ÍCONES */
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #c6a15b;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #c6a15b;
+    font-size: 22px;
+    margin-bottom: 28px;
+}
+
+/* TEXTOS */
+
+.service-card h3 {
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: 21px;
+    margin-bottom: 17px;
+}
+
+.service-card p {
+    color: #999;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+.service-card a {
+    margin-top: auto;
+    color: #c6a15b;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.service-card a:hover {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+/* =========================================
+   5. RODAPÉ
+========================================= */
+
+footer {
+    background: #111;
+    border-top: 1px solid #292929;
+    text-align: center;
+    padding: 35px 15px;
+    color: #888;
+    font-size: 12px;
+}
+
+/* =========================================
+   6. TABLETS
+========================================= */
+
+@media (max-width: 900px) {
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .services .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
+
+/* =========================================
+   7. TELEMÓVEIS
+========================================= */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 5%;
+    }
+
+    .brand-mark {
+        width: 62px;
+        height: 62px;
+        font-size: 28px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    #inicio {
+        min-height: 600px;
+        padding: 100px 7%;
+    }
+
+    #inicio h1 {
+        font-size: 43px;
+    }
+
+    .about {
+        padding: 80px 7%;
+    }
+
+    .about-decoration {
+        min-height: 280px;
+    }
+
+    .about-logo {
+        font-size: 85px;
+    }
+
+    .services {
+        padding: 75px 7%;
+    }
+
+    .services .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        min-height: 280px;
+    }
+
+    .services-heading h2 {
+        font-size: 35px;
+    }
+}
+
+/* =================================
+   PORTFÓLIO - MIGUEL PEDRO STUDIOS
+================================= */
+
+.portfolio {
+    background: #0b0b0b;
+    padding: 110px 10% !important;
+}
+
+.portfolio-heading {
+    max-width: 700px;
+    margin-bottom: 65px;
+}
+
+.portfolio-heading h2 {
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.2;
+    margin: 25px 0;
+}
+
+.portfolio-heading h2 span {
+    display: block;
+    color: #c6a15b;
+}
+
+.portfolio-heading p {
+    color: #999;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 580px;
+}
+
+/* GRELHA */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* CARTÕES */
+
+.portfolio-card {
+    background: #111;
+    border: 1px solid #29231a;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-7px);
+    border-color: #c6a15b;
+}
+
+/* VÍDEOS */
+
+.portfolio-video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #181818;
+    overflow: hidden;
+}
+
+.portfolio-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.portfolio-tag {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background: rgba(8, 8, 8, 0.85);
+    color: #c6a15b;
+    padding: 9px 13px;
+    font-size: 9px;
+    letter-spacing: 2px;
+    pointer-events: none;
+}
+
+/* INFORMAÇÕES */
+
+.portfolio-info {
+    padding: 28px;
+}
+
+.portfolio-category {
+    color: #c6a15b;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.portfolio-info h3 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    color: #fff;
+    margin: 13px 0;
+}
+
+.portfolio-info p {
+    color: #999;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* FINAL DO PORTFÓLIO */
+
+.portfolio-footer {
+    margin-top: 65px;
+    padding: 35px;
+    border: 1px solid #302719;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.portfolio-footer p {
+    color: #ddd;
+    font-size: 14px;
+}
+
+.portfolio-footer a {
+    color: #c6a15b;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.portfolio-footer a:hover {
+    color: #fff;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    .portfolio {
+        padding: 75px 7% !important;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .portfolio-info {
+        padding: 23px;
+    }
+}
+
+/* ================================
+   EMPRESAS CLIENTES
+================================ */
+
+.clients {
+    background: #0e0e0e;
+    padding: 110px 10% !important;
+}
+
+.clients-heading {
+    max-width: 720px;
+    margin-bottom: 65px;
+}
+
+.clients-heading h2 {
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: clamp(36px, 5vw, 55px);
+    line-height: 1.2;
+    margin: 25px 0;
+}
+
+.clients-heading h2 span {
+    display: block;
+    color: #c6a15b;
+}
+
+.clients-heading p {
+    color: #999;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 600px;
+}
+
+/* GRELHA DE EMPRESAS */
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #29231a;
+    border-left: 1px solid #29231a;
+}
+
+.client-item {
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-right: 1px solid #29231a;
+    border-bottom: 1px solid #29231a;
+    transition: 0.4s ease;
+}
+
+.client-item span {
+    color: #777;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+.client-item:hover {
+    background: #17130e;
+}
+
+.client-item:hover span {
+    color: #c6a15b;
+    transform: scale(1.08);
+}
+
+/* TELEMÓVEIS */
+
+@media (max-width: 768px) {
+
+    .clients {
+        padding: 75px 7% !important;
+    }
+
+    .clients-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .client-item {
+        min-height: 110px;
+    }
+
+    .client-item span {
+        font-size: 13px;
+    }
+}
+
+/* ==========================
+   PORTFÓLIO
+========================== */
+
+.portfolio {
+    background: #080808;
+    padding: 110px 10% !important;
+}
+
+.portfolio-heading {
+    max-width: 700px;
+    margin-bottom: 65px;
+}
+
+.portfolio-heading h2 {
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.15;
+    margin: 25px 0;
+}
+
+.portfolio-heading h2 span {
+    display: block;
+    color: #c6a15b;
+}
+
+.portfolio-heading p {
+    color: #999;
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 25px;
+}
+
+.portfolio-card {
+    background: #101010;
+    border: 1px solid #29231a;
+    transition: 0.4s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-6px);
+    border-color: #c6a15b;
+}
+
+.video-wrapper {
+    position: relative;
+    background: #000;
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+}
+
+.video-label {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 2;
+    background: #c6a15b;
+    color: #080808;
+    padding: 9px 13px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    pointer-events: none;
+}
+
+.portfolio-info {
+    padding: 25px;
+}
+
+.portfolio-info span {
+    color: #c6a15b;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.portfolio-info h3 {
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    margin: 12px 0;
+}
+
+.portfolio-info p {
+    color: #999;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.portfolio-footer {
+    text-align: center;
+    margin-top: 55px;
+}
+
+.portfolio-footer a {
+    display: inline-block;
+    padding: 17px 30px;
+    background: #c6a15b;
+    color: #080808;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.portfolio-footer a:hover {
+    background: #e0bd7a;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 700px) {
+    .portfolio {
+        padding: 75px 7% !important;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =================================
+   JANELA DE SOLICITAÇÃO DE SERVIÇOS
+================================= */
+
+.service-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.service-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.88);
+    backdrop-filter: blur(8px);
+}
+
+.modal-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 560px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 45px;
+    background: #101010;
+    border: 1px solid #49391f;
+    box-shadow: 0 20px 80px rgba(0,0,0,.6);
+    transform: translateY(25px);
+    transition: 0.3s ease;
+}
+
+.service-modal.active .modal-content {
+    transform: translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #c6a15b;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    color: #f5f2eb;
+    font-family: Georgia, serif;
+    font-size: 35px;
+    margin: 20px 0 12px;
+}
+
+.modal-description {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+#serviceForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#serviceForm label {
+    color: #c6a15b;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 8px;
+}
+
+#serviceForm input,
+#serviceForm select,
+#serviceForm textarea {
+    width: 100%;
+    padding: 14px;
+    background: #181818;
+    border: 1px solid #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+#serviceForm input:focus,
+#serviceForm select:focus,
+#serviceForm textarea:focus {
+    border-color: #c6a15b;
+}
+
+#serviceForm input[readonly] {
+    color: #c6a15b;
+}
+
+#serviceForm textarea {
+    resize: vertical;
+}
+
+.selected-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #1b1710;
+    border: 1px solid #594326;
+    margin-top: 8px;
+}
+
+.selected-price span {
+    color: #aaa;
+    font-size: 13px;
+}
+
+.selected-price strong {
+    color: #c6a15b;
+    font-size: 19px;
+}
+
+.form-divider {
+    height: 1px;
+    background: #292929;
+    margin: 12px 0;
+}
+
+.whatsapp-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 18px 20px;
+    margin-top: 15px;
+    background: #c6a15b;
+    border: none;
+    color: #080808;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.whatsapp-button:hover {
+    background: #e0bd7a;
+    transform: translateY(-3px);
+}
+
+.modal-footer {
+    text-align: center;
+    color: #777;
+    font-size: 11px;
+    margin-top: 25px;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+/* TELEMÓVEIS */
+
+@media (max-width: 600px) {
+    .modal-content {
+        padding: 35px 22px;
+    }
+
+    .modal-content h2 {
+        font-size: 28px;
+    }
+
+    .service-modal {
+        padding: 12px;
+    }
+}
+.empresa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.empresa img {
+    max-width: 150px;
+    max-height: 90px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: 0.3s ease;
+}
+
+.empresa img:hover {
+    transform: scale(1.08);
+}
+
+/* SECÇÃO VAMOS TRABALHAR JUNTOS */
+
+.contact-cta {
+    padding: 100px 20px;
+    background: #0b0b0f;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.contact-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.contact-label {
+    color: #c9a477;
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.contact-content h2 {
+    color: #d5ad80;
+    font-size: 38px;
+    margin: 22px 0;
+}
+
+.contact-content h3 {
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.contact-content p {
+    color: #b7b7bf;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 35px;
+}
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 28px;
+    background: #c9a477;
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.contact-button:hover {
+    background: #e0bd91;
+    transform: translateY(-4px);
+}
+
+.contact-note {
+    display: block;
+    color: #888;
+    font-size: 12px;
+    margin-top: 22px;
+}
+
+@media (max-width: 600px) {
+    .contact-cta {
+        padding: 70px 20px;
+    }
+
+    .contact-content h2 {
+        font-size: 30px;
+    }
+
+    .contact-content h3 {
+        font-size: 21px;
+    }
+
+    .contact-content p {
+        font-size: 14px;
+    }
+}
+
